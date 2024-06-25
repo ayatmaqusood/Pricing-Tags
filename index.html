@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Tag</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #9ba1a1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            width: 90%;
+            max-width: 900px;
+            margin: 5% auto;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .price-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .single-price {
+            width: 30%;
+            background: #262626;
+            margin: 1.5%;
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            transition: 0.9s;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .price {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid #da4357;
+            margin: 20px auto 0;
+            text-align: center;
+            line-height: 120px;
+        }
+
+        .price h2 {
+            font-size: 38px;
+            color: #fff;
+            line-height: normal;
+            margin: 0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .deals {
+            margin-top: 10%;
+        }
+
+        .single-price h1 {
+            font-size: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .deals h4 {
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+            color: #ddd;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .single-price:hover {
+            background: #da4357;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+            transform: scale(1.1);
+            z-index: 1;
+            border-radius: 25px;
+        }
+
+        .single-price:hover .price {
+            border-color: #fff;
+        }
+
+        .single-price a {
+            text-decoration: none;
+            background: #da4357;
+            color: #fff;
+            padding: 10px 60px;
+            display: inline-block;
+            margin: 10% auto;
+            text-transform: uppercase;
+            font-weight: normal;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .single-price:hover a {
+            background: #262626;
+            color: #fff;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background: #da4357;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .button-container button:hover {
+            background: #262626;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="price-container">
+            <div class="single-price">
+                <h1>Basic</h1>
+                <div class="price">
+                    <h2>$15</h2>
+                </div>
+                <div class="deals">
+                    <h4>Unlimited Users</h4>
+                    <h4>Unlimited Downloads</h4>
+                    <h4>Fully Editable Files</h4>
+                    <h4>200+ Custom Packs</h4>
+                </div>
+            </div>
+
+            <div class="single-price">
+                <h1>Standard</h1>
+                <div class="price">
+                    <h2>$25</h2>
+                </div>
+                <div class="deals">
+                    <h4>Unlimited Users</h4>
+                    <h4>Unlimited Downloads</h4>
+                    <h4>Fully Editable Files</h4>
+                    <h4>200+ Custom Packs</h4>
+                </div>
+            </div>
+
+            <div class="single-price">
+                <h1>Premium</h1>
+                <div class="price">
+                    <h2>$35</h2>
+                </div>
+                <div class="deals">
+                    <h4>Unlimited Users</h4>
+                    <h4>Unlimited Downloads</h4>
+                    <h4>Fully Editable Files</h4>
+                    <h4>200+ Custom Packs</h4>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button>Get Started</button>
+            <button>Learn More</button>
+            <button>Contact Us</button>
+        </div>
+    </div>
+</body>
+
+</html>
